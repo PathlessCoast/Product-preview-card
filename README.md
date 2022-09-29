@@ -37,8 +37,8 @@ On mobile
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/PathlessCoast/Product-preview-card)
-- Live Site URL: [Add live site URL here](https://pathlesscoast.github.io/Product-preview-card/)
+- Solution URL: [https://github.com/PathlessCoast/Product-preview-card](https://github.com/PathlessCoast/Product-preview-card)
+- Live Site URL: [https://github.com/PathlessCoast/Product-preview-card](https://pathlesscoast.github.io/Product-preview-card/)
 
 ### Built with
 
