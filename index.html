@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+    :root {
+        --primary: hsl(158, 36%, 37%);
+        --secondary: hsl(30, 38%, 92%);
+        --dark-blue: hsl(212, 21%, 14%);
+        --gray-blue: hsl(228, 12%, 48%);
+        --active-state: #1A4031;
+    }
+    * {
+        margin: 0;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1, .main-price {
+        font-family: 'Fraunces', serif;
+    }
+    body {
+        background-color: var(--secondary);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.875rem;
+        color: var(--gray-blue);
+        line-height: 160%;
+    }
+    .container {
+        padding: 15px;
+    }
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card .img-desktop {
+        display: none;
+    }
+    .card .card-info {
+        padding: 25px;
+        padding-top: 20px;
+    }
+    .card-info .subtitle {
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    .card-info h1 {
+        font-size: 2rem;
+        color: var(--dark-blue);
+        line-height: 100%;
+        margin-bottom: 1rem;
+    }
+    .card-info .price-box {
+        display: flex;
+        align-items: center;
+        margin-top: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    .price-box .main-price {
+        color: var(--primary);
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    .price-box .old-price {
+        text-decoration: line-through;
+    }
+    .card-info button {
+        width: 100%;
+        background-color: var(--primary);
+        color: white;
+        font-weight: 700;
+        border: none;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .card-info button:hover, .card-info button:active {
+        cursor: pointer;
+        background-color: var(--active-state);
+    }
+    .card-info button img {
+        max-width: 15px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    @media screen and (min-width:500px) {
+        .card .img-mobile {
+            display: none;
+        }
+        .card .img-desktop {
+            display: block;
+            flex-basis: 50%;
+        }
+        .card {
+            display: flex;
+            max-width: 600px;
+        }  
+        .card img {
+            max-width: 50%;
+        }
+        .card .card-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="card">
+        <img class="img-mobile" src="images/image-product-mobile.jpg" alt="Chanel perfume">
+        <img class="img-desktop" src="images/image-product-desktop.jpg" alt="Chanel perfume">
+        <section class="card-info">
+            <p class="subtitle">Perfume</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            <div class="price-box">
+                <span class="main-price">$149.99</span>
+                <span class="old-price">$169.99</span>
+            </div>
+            <button><img src="images/icon-cart.svg" alt="icon-cart">Add to Cart</button>
+        </section>
+    </article>
+  </main>
+</body>
+</html>
