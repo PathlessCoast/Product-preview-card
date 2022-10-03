@@ -10,13 +10,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -37,8 +30,8 @@ On mobile
 
 ### Links
 
-- Solution URL: [https://github.com/PathlessCoast/Product-preview-card](https://github.com/PathlessCoast/Product-preview-card)
-- Live Site URL: [https://github.com/PathlessCoast/Product-preview-card](https://pathlesscoast.github.io/Product-preview-card/)
+- Solution URL: [https://github.com/ginaslab/Product-preview-card](https://github.com/ginaslab/Product-preview-card)
+- Live Site URL: [https://ginaslab.github.io/Product-preview-card/](https://ginaslab.github.io/Product-preview-card/)
 
 ### Built with
 
